@@ -1,0 +1,70 @@
+body
+{
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#divnumuscito
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color:  rgb(0, 90, 251);
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 500px;
+  color: white;
+}
+
+.numExit
+{
+  animation-name: visibleOut;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  visibility: visible;
+}
+
+@keyframes visibleOut {
+  from {left: 0px;}
+  to {left: 100%}
+}
+
+h1
+{
+  display: inline-table;
+  color: white;
+  text-align: center;
+}
+
+.button
+{
+  text-align: right;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.table
+{
+  width: 100%;
+  height: 100%;
+  border-color: rgb(20, 14, 240);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  margin: auto;
+  text-align: center;
+}
+
+td
+{
+  border-color: rgb(20, 14, 240);
+  border-style: solid;
+  border-width: 1px;
+}
