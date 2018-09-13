@@ -18,11 +18,29 @@ window.onload = function() {
 
 var oldnumber = [];
 var oldid = 0;
-
+var count;
+var int;
 function numout()
 {
-  document.getElementById("divnumuscito").className = "numExit";
-  //document.getElementById("divnumuscito").className = "numHide";
+  document.getElementById("divnumuscito").style.visibility = "visible";
+  count = 0;
+  document.getElementById("divnumuscito").style.left = `${count}px`;
+  int = setInterval(LeftToRight, 30);
+
+}
+
+function LeftToRight()
+{
+    document.getElementById("divnumuscito").style.left = `${count}px`;
+    console.log(count);
+    if (count == 200)
+    {
+      clearInterval(int);
+    }
+    else
+    {
+      count++;
+    }
 }
 
 function getRndInteger(min, max) {

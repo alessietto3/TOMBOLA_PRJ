@@ -9,11 +9,7 @@ body
 #divnumuscito
 {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  top: 20px;
   width: 500px;
   height: 500px;
   background-color:  rgb(0, 90, 251);
@@ -21,20 +17,7 @@ body
   border-radius: 20px;
   font-size: 500px;
   color: white;
-}
-
-.numExit
-{
-  animation-name: visibleOut;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  visibility: visible;
-}
-
-
-@keyframes visibleOut {
-  from {left: 0px;}
-  to {left: 100%}
+  visibility: hidden;
 }
 
 h1
