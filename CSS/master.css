@@ -9,7 +9,7 @@ body
 #divnumuscito
 {
   position: absolute;
-  top: 10%;
+  top: 100px;
   left: -600px;
   width: 500px;
   height: 500px;
@@ -40,6 +40,9 @@ h1
   display: inline-table;
   color: white;
   text-align: center;
+  text-shadow: 5px 5px 5px black;
+  color: black;
+  letter-spacing: 3px;
 }
 
 .button
@@ -58,9 +61,9 @@ h1
   border-style: solid;
   border-width: 2px;
   border-radius: 3px;
-  margin: auto;
+  margin-left: 2px;
+  margin-right: 2px;
   text-align: center;
-  color: rgba(145, 153, 145, 0.25);
 }
 
 td
