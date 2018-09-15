@@ -2,17 +2,17 @@
 <html lang=it dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/master.css?v=1.1.4">
-    <script src="JS/master.js?V4" charset="utf-8"></script>
+    <link rel="stylesheet" href="CSS/master.css?v=1.2.0">
+    <script src="JS/master.js?V7" charset="utf-8"></script>
     <title>Tombola</title>
   </head>
   <body>
     <article class="body">
       <button type="button" name="reset" class="button" onclick="eraseall()">Azzera</button>
       <h1>Tombola</h1>
-      <button type="button" name="random" class="button" onclick="callnumber()">Estrai Numero</button>
+      <button type="button" name="random" id="startrandom" class="button" onclick="callnumber()">Estrai Numero</button>
       <table id="table" class="table"></table>
-      <div id="divnumuscito">
+      <div id="divnumuscito" style="animation-play-state: paused">
         <p id="numuscito"></p>
       </div>
 

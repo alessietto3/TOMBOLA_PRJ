@@ -20,28 +20,19 @@ var oldnumber = [];
 var oldid = 0;
 var count;
 var int;
+
+/***************************NUMBER OUT PRESENTEER*****************************/
 function numout()
 {
-  document.getElementById("divnumuscito").style.visibility = "visible";
-  count = 0;
-  document.getElementById("divnumuscito").style.left = `${count}px`;
-  int = setInterval(LeftToRight, 30);
-
+  document.getElementById("startrandom").style.visibility = "hidden";
+  document.getElementById("divnumuscito").style.animationPlayState = "running";
+  document.getElementById("divnumuscito").classList.add("move");
+  setTimeout(function(){
+    document.getElementById("divnumuscito").classList.remove("move");
+    document.getElementById("startrandom").style.visibility = "visible";
+  }, 20000);
 }
 
-function LeftToRight()
-{
-    document.getElementById("divnumuscito").style.left = `${count}px`;
-    console.log(count);
-    if (count == 200)
-    {
-      clearInterval(int);
-    }
-    else
-    {
-      count++;
-    }
-}
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -87,7 +78,7 @@ function deactivenumber() {
   cell.style.color = "rgb(48, 43, 47)";
   cell.style.backgroundColor = "black";
 }
-
+/***************************CLEAN TABLE****************************************/
 function eraseall() {
   for (let i = 1; i <= 90; i++) {
     oldnumber[i] = 0;
