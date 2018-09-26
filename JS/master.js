@@ -84,7 +84,7 @@ function eraseall() {
     oldnumber[i] = 0;
     let cell = document.getElementById(i);
     cell.style.color = "rgb(48, 43, 47)";
-    cell.style.backgroundColor = "black";
+    cell.style.backgroundColor = "rgba(105, 161, 209, 0.07)";
   }
   oldid = 0;
 }
