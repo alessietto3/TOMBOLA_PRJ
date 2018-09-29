@@ -18,3 +18,7 @@
     </article>
   </body>
 </html>
+<?php
+    system(exec ( "GPIO read 7", $status ));
+    system(print_r ( $status ));
+?>
