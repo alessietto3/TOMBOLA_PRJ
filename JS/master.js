@@ -97,7 +97,7 @@ setInterval(function(){
   let GpioIn1= document.getElementById("GpioOut1").innerText;
   if ((GpioIn1 == 0) && (timeoutnumber == 1))
   {
-    Azzera();
+    eraseall();
   }
   let GpioIn2= document.getElementById("GpioOut2").innerText;
   if ((GpioIn2 == 0) && (timeoutnumber == 1))

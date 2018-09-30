@@ -1,4 +1,4 @@
 <?php
-exec ( "gpio read 7", $status1 );
+exec ( "gpio read 9", $status1 );
 echo ( $status1[0] );
 ?>
