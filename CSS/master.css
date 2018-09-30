@@ -29,14 +29,14 @@ body
   left: 0px;
   animation-name: numberout;
   animation-duration: 20s;
+
 }
 
 @keyframes numberout {
-  0% {left: -600px;}
-  50% {left: 32%;}
-  100% {left: 110%}
+  0% {left: -600px; transform: rotateY(360deg);}
+  50% {left: 32%; transform: rotateY(0deg);}
+  100% {left: 100%; transform: rotateY(360deg);}
 }
-
 /******TITOLO***********/
 h1
 {
