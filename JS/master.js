@@ -20,6 +20,7 @@ var oldnumber = [];
 var oldid = 0;
 var count;
 var int;
+var timeoutnumber = 1;
 
 /***************************NUMBER OUT PRESENTEER*****************************/
 function numout()
@@ -27,9 +28,11 @@ function numout()
   document.getElementById("startrandom").style.visibility = "hidden";
   document.getElementById("divnumuscito").style.animationPlayState = "running";
   document.getElementById("divnumuscito").classList.add("move");
+  timeoutnumber = 0;
   setTimeout(function(){
     document.getElementById("divnumuscito").classList.remove("move");
     document.getElementById("startrandom").style.visibility = "visible";
+    timeoutnumber = 1;
   }, 20000);
 }
 
@@ -88,3 +91,19 @@ function eraseall() {
   }
   oldid = 0;
 }
+
+/**************************POLLING GPIO***************************************/
+setInterval(function(){
+  $("#GpioOut1").load('/PHP/gpio1.php');
+  $("#GpioOut2").load('/PHP/gpio2.php');
+  let GpioIn1= document.getElementById("GpioOut1").innerText;
+  if ((GpioIn1 == 0) && (timeoutnumber == 1))
+  {
+    Azzera();
+  }
+  let GpioIn2= document.getElementById("GpioOut2").innerText;
+  if ((GpioIn2 == 0) && (timeoutnumber == 1))
+  {
+    callnumber();
+  }
+}, 500);

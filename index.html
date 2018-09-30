@@ -2,9 +2,11 @@
 <html lang=it dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/master.css?v=1.2.2">
-    <script src="JS/master.js?V8" charset="utf-8"></script>
-    <title>Tombola</title>
+    <link rel="stylesheet" href="CSS/master.css?v=1.2.3">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="JS/master.js?V9" charset="utf-8"></script>
+    <title>Tombola1</title>
+    <!-- HTML VERSION V.1.1.-->
   </head>
   <body>
     <article class="body">
@@ -15,10 +17,8 @@
       <div id="divnumuscito" style="animation-play-state: paused">
         <p id="numuscito"></p>
       </div>
+      <p id="GpioOut1" style="display: hidden">Azzera</p>
+      <p id="GpioOut2" style="display: hidden">Random</p>
     </article>
   </body>
 </html>
-<?php
-    system(exec ( "GPIO read 7", $status ));
-    system(print_r ( $status ));
-?>

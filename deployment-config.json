@@ -5,5 +5,5 @@
     "password": "raspberry",
     "port": 22,
     "remotePath": "/var/www/http/",
-    "uploadOnSave": true
+    "uploadOnSave": false
 }
