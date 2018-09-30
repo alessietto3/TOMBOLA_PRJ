@@ -74,9 +74,11 @@ h1
 
 .table
 {
-  width: 1880px;
+  width: 100%;
+  height: 100%;
+  /*width: 1880px;
   height: 800px;
-  /*border-color: rgb(20, 14, 240);
+  border-color: rgb(20, 14, 240);
   border-style: solid;
   border-width: 2px;
   border-radius: 4px;*/

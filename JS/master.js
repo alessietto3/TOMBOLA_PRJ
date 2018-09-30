@@ -24,13 +24,13 @@ var timeoutnumber = 1;
 /***************************NUMBER OUT PRESENTEER*****************************/
 function numout()
 {
-  document.getElementById("startrandom").style.visibility = "hidden";
+  document.getElementById("titolo").style.visibility = "hidden";
   document.getElementById("divnumuscito").style.animationPlayState = "running";
   document.getElementById("divnumuscito").classList.add("move");
   timeoutnumber = 0;
   setTimeout(function(){
     document.getElementById("divnumuscito").classList.remove("move");
-    document.getElementById("startrandom").style.visibility = "visible";
+    document.getElementById("titolo").style.visibility = "visible";
     timeoutnumber = 1;
   }, 20000);
 }
