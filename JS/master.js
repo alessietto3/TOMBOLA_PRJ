@@ -8,7 +8,6 @@ window.onload = function() {
     for (let c = 0; c < maxcolum; c += 1) {
       let newcell = document.createElement("td");
       newcell.id = number;
-      newcell.style.color = "rgb(48, 43, 47)";
       newcell.style.fontSize = "50px";
       newcell.innerHTML = number++;
       newrow.appendChild(newcell);
@@ -48,15 +47,17 @@ function callnumber() {
   if (id == 0) {
     eraseall();
   } else {
-    let cell = document.getElementById(id);
-    cell.style.color = "black";
-    cell.style.backgroundColor = "rgb(14, 217, 246)";
-    document.getElementById("divnumuscito").innerText = id;
+    let cell = document.getElementById(id); //Modifica cella richiamata
+    cell.style.color = "darkred";
+    cell.style.borderColor = "darkred";
+    cell.style.backgroundColor = "orange";
+    cell.style.boxShadow =  "1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange";
+    document.getElementById("divnumuscito").innerText = id; //scrive numero su tabellone mobile
     oldnumber[oldid] = id;
     oldid++;
     //console.log(oldnumber);
     //console.log(oldid);
-    numout();
+    numout(); // Attivo animazione
   }
 }
 
@@ -76,18 +77,15 @@ function checknumber(id) {
   }
 }
 
-function deactivenumber() {
-  let cell = document.getElementById(id);
-  cell.style.color = "rgb(48, 43, 47)";
-  cell.style.backgroundColor = "black";
-}
 /***************************CLEAN TABLE****************************************/
 function eraseall() {
   for (let i = 1; i <= 90; i++) {
     oldnumber[i] = 0;
     let cell = document.getElementById(i);
-    cell.style.color = "rgb(48, 43, 47)";
+    cell.style.color = "rgba(6, 6, 6, 0.38)";
     cell.style.backgroundColor = "rgba(105, 161, 209, 0.07)";
+    cell.style.borderColor = "rgba(255, 156, 4, 0.62)";
+    cell.style.boxShadow = "none";
   }
   oldid = 0;
 }

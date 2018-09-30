@@ -9,15 +9,17 @@ body
 #divnumuscito
 {
   position: absolute;
-  top: 100px;
-  left: -600px;
-  width: 500px;
-  height: 500px;
-  background-color:  rgb(0, 90, 251);
-  border: 2px solid black;
-  border-radius: 20px;
+  top: 20%;
+  left: -700px;
+  width: 600px;
+  height: 600px;
+  background-color:  orange;
+  color: darkred;
+  box-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  border: 10px solid darkred;
+  border-radius: 100%;
   font-size: 500px;
-  color: white;
+
 }
 
 /*******ANIMATION***********/
@@ -35,13 +37,15 @@ body
   100% {left: 110%}
 }
 
+/******TITOLO***********/
 h1
 {
   display: inline-table;
-  color: white;
+  font-size: 3em;
+  font-family: fantasy;
   text-align: center;
-  text-shadow: 5px 5px 5px black;
-  color: black;
+  text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+  color: red;
   letter-spacing: 3px;
 }
 
@@ -69,12 +73,12 @@ h1
 
 .table
 {
-  width: 100%;
-  height: 100%;
-  border-color: rgb(20, 14, 240);
+  width: 1880px;
+  height: 800px;
+  /*border-color: rgb(20, 14, 240);
   border-style: solid;
   border-width: 2px;
-  border-radius: 3px;
+  border-radius: 4px;*/
   margin-left: 2px;
   margin-right: 2px;
   text-align: center;
@@ -82,7 +86,11 @@ h1
 
 td
 {
-  border-color: rgb(20, 14, 240);
+  color: rgba(6, 6, 6, 0.38);
+  border-color: rgba(255, 156, 4, 0.62);
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  border-radius: 100%;
+  height: auto;
+  width: auto;
 }
